@@ -4,9 +4,9 @@ const peerUser={}
 
 var peer = new Peer(
     {
-        host:'/',
+        host:'localhost',
     
-        
+      path:'/',  
     port:3001,
     config:{'iceServers': [
         {
@@ -34,7 +34,6 @@ var peer = new Peer(
         },
       ],
     },
-    proxied: true,
 }
     
 );

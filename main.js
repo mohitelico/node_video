@@ -38,16 +38,16 @@ io.on('connection',(socket)=>{
   
 })
 
-// const peerServer = PeerServer(
-//     {  path:'/',
-//         port: 443,
-//         ssl: {
-//             key: fs.readFileSync(path.join(__dirname,'cert','key.pem')),
-//             cert: fs.readFileSync(path.join(__dirname,'cert','cert.pem')),
-//         }, 
-//     },()=>{
-//     console.log('Peer server is running')
-// });
+const peerServer = PeerServer(
+    {  path:'/',
+        port: 3001,
+        // ssl: {
+        //     key: fs.readFileSync(path.join(__dirname,'cert','key.pem')),
+        //     cert: fs.readFileSync(path.join(__dirname,'cert','cert.pem')),
+        // }, 
+    },()=>{
+    console.log('Peer server is running')
+});
 
 
 server.listen(3000,(req,res)=>{
